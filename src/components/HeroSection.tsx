@@ -45,11 +45,11 @@ const HeroSection = () => {
             <p className="text-white/80 mt-2">Years of Excellence</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-md border border-white/20">
-            <h3 className="text-4xl font-serif font-bold text-law-gold">10,000+</h3>
+            <h3 className="text-4xl font-serif font-bold text-law-gold">18,000+</h3>
             <p className="text-white/80 mt-2">Students Enrolled</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-md border border-white/20">
-            <h3 className="text-4xl font-serif font-bold text-law-gold">300+</h3>
+            <h3 className="text-4xl font-serif font-bold text-law-gold">30+</h3>
             <p className="text-white/80 mt-2">Distinguished Faculty</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-md border border-white/20">
