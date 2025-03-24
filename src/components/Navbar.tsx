@@ -1,7 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,21 +13,18 @@ const Navbar = () => {
         setIsScrolled(false);
       }
     };
-    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-law-navy font-serif text-2xl font-bold">KUTAFIN</a>
+            <a href="#" className="text-law-WHITE font-serif text-2xl font-bold">KUTAFIN MOSCOW
+STATE LAW UNIVERSITY</a>
           </div>
           
           {/* Desktop Navigation */}
@@ -48,11 +43,7 @@ const Navbar = () => {
           </div>
           
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-law-navy"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle menu"
-          >
+          <button className="md:hidden text-law-navy" onClick={toggleMobileMenu} aria-label="Toggle menu">
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </nav>
@@ -71,8 +62,6 @@ const Navbar = () => {
           <a href="#contact" className="button-primary text-center">Apply Now</a>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Navbar;

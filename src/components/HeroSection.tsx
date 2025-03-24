@@ -1,27 +1,21 @@
-
 import React, { useEffect, useState } from 'react';
-
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  
   useEffect(() => {
     // Set visibility after a short delay for animation purposes
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
-    
     return () => clearTimeout(timer);
   }, []);
-
-  return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-law-navy/90">
         <div className="absolute inset-0 bg-[url('/src/assets/hero-pattern.svg')] opacity-5"></div>
       </div>
       
       {/* Content */}
-      <div className="container mx-auto px-6 py-24 pt-32 md:pt-24 relative z-10">
+      <div className="container mx-auto px-6 py-24 pt-32 md:pt-24 relative z-10 bg-red-950">
         <div className="max-w-3xl">
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h5 className="font-serif text-law-gold mb-3">KUTAFIN MOSCOW STATE LAW UNIVERSITY</h5>
@@ -67,8 +61,6 @@ const HeroSection = () => {
       
       {/* Decorative Element */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
