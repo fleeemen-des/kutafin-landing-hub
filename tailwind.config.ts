@@ -69,6 +69,7 @@ export default {
 					"ivory": "#F8F7F4",
 					"slate": "#4A5568",
 					"lightgold": "#D9C89E",
+					"red": "#ea384c",
 				}
 			},
 			borderRadius: {
@@ -127,3 +128,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
