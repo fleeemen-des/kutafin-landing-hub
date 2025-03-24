@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { BookOpen, Users, GraduationCap, Globe } from 'lucide-react';
 
@@ -38,12 +37,12 @@ const ProgramsSection = () => {
   const isVisible = useOnScreen(sectionRef);
   
   return (
-    <section id="programs" className="py-20 md:py-28 bg-law-navy/5" ref={sectionRef}>
+    <section id="programs" className="py-20 md:py-28 bg-gray-50" ref={sectionRef}>
       <div className="container mx-auto px-6">
         <div className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h5 className="text-law-gold font-medium mb-3">OUR PROGRAMS</h5>
-          <h2 className="section-heading">Academic Excellence in Legal Education</h2>
-          <p className="text-law-slate">
+          <h5 className="text-law-red font-medium mb-3">OUR PROGRAMS</h5>
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold text-gray-900 mb-6">Academic Excellence in Legal Education</h2>
+          <p className="text-gray-700">
             Kutafin University offers a wide range of programs designed to prepare students 
             for successful careers in various legal fields. Our curriculum combines theoretical knowledge 
             with practical skills and real-world experience.
@@ -56,18 +55,18 @@ const ProgramsSection = () => {
               key={program.title}
               className={`bg-white rounded-lg shadow-lg p-6 card-hover transition-all duration-700 delay-${index * 100} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             >
-              <div className="w-14 h-14 bg-law-gold/20 rounded-full flex items-center justify-center mb-6">
-                <program.icon size={24} className="text-law-gold" />
+              <div className="w-14 h-14 bg-law-red/20 rounded-full flex items-center justify-center mb-6">
+                <program.icon size={24} className="text-law-red" />
               </div>
-              <h3 className="text-xl font-serif font-semibold text-law-navy mb-3">{program.title}</h3>
-              <p className="text-law-slate mb-4 text-sm">{program.description}</p>
-              <div className="flex items-center justify-between text-sm text-law-slate/80 mb-4">
+              <h3 className="text-xl font-serif font-semibold text-gray-900 mb-3">{program.title}</h3>
+              <p className="text-gray-700 mb-4 text-sm">{program.description}</p>
+              <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
                 <span>{program.level}</span>
                 <span>{program.duration}</span>
               </div>
               <a 
                 href="#contact" 
-                className="text-law-navy font-medium text-sm flex items-center hover:text-law-gold transition-colors"
+                className="text-law-red font-medium text-sm flex items-center hover:text-law-red/80 transition-colors"
               >
                 Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +78,7 @@ const ProgramsSection = () => {
         </div>
         
         <div className={`mt-12 text-center transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <a href="#contact" className="button-secondary inline-block">
+          <a href="#contact" className="button-secondary border-law-red text-law-red hover:bg-law-red hover:text-white inline-block">
             Request Program Details
           </a>
         </div>
@@ -95,7 +94,6 @@ function useOnScreen(ref: React.RefObject<HTMLElement>) {
   React.useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // When element enters viewport, set state to true and stop observing
         if (entry.isIntersecting) {
           setIntersecting(true);
           observer.disconnect();

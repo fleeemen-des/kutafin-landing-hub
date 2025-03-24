@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-law-navy/95">
+      <div className="absolute inset-0 bg-law-red/95">
         <div className="absolute inset-0 bg-[url('/src/assets/hero-pattern.svg')] opacity-5"></div>
       </div>
       
@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 py-24 pt-32 md:pt-24 relative z-10">
         <div className="max-w-3xl">
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h5 className="font-serif text-law-red mb-3">KUTAFIN MOSCOW STATE LAW UNIVERSITY</h5>
+            <h5 className="font-serif text-white mb-3">KUTAFIN MOSCOW STATE LAW UNIVERSITY</h5>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
               Shaping the Future of Legal Excellence
             </h1>
@@ -32,10 +32,10 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <a href="#programs" className="button-primary bg-law-red text-white hover:bg-white hover:text-law-navy">
+              <a href="#programs" className="button-primary bg-white text-law-red hover:bg-white/90 hover:text-law-red/90">
                 Explore Programs
               </a>
-              <a href="#about" className="button-secondary border-white text-white hover:bg-white hover:text-law-navy">
+              <a href="#about" className="button-secondary border-white text-white hover:bg-white hover:text-law-red">
                 Learn More
               </a>
             </div>
@@ -45,19 +45,19 @@ const HeroSection = () => {
         {/* Stats */}
         <div className={`mt-16 md:mt-32 grid grid-cols-1 md:grid-cols-4 gap-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-md border border-white/20">
-            <h3 className="text-4xl font-serif font-bold text-law-red">90+</h3>
+            <h3 className="text-4xl font-serif font-bold text-white">90+</h3>
             <p className="text-white/80 mt-2">Years of Excellence</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-md border border-white/20">
-            <h3 className="text-4xl font-serif font-bold text-law-red">18,000+</h3>
+            <h3 className="text-4xl font-serif font-bold text-white">18,000+</h3>
             <p className="text-white/80 mt-2">Students Enrolled</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-md border border-white/20">
-            <h3 className="text-4xl font-serif font-bold text-law-red">30+</h3>
+            <h3 className="text-4xl font-serif font-bold text-white">30+</h3>
             <p className="text-white/80 mt-2">Distinguished Faculty</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-md border border-white/20">
-            <h3 className="text-4xl font-serif font-bold text-law-red">95%</h3>
+            <h3 className="text-4xl font-serif font-bold text-white">95%</h3>
             <p className="text-white/80 mt-2">Employment Rate</p>
           </div>
         </div>
