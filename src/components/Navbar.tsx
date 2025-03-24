@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-law-WHITE font-serif text-2xl font-bold">KUTAFIN MOSCOW
+            <a href="#" className="text-law-white font-serif text-2xl font-bold">KUTAFIN MOSCOW
 STATE LAW UNIVERSITY</a>
           </div>
           
