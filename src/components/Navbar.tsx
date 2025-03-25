@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:block">
-            <a href="#contact" className="button-primary bg-law-red text-white hover:bg-law-red/90">Apply Now</a>
+            <a href="#contact" className="button-primary bg-[#94C414] text-white hover:bg-[#94C414]/90">Apply Now</a>
           </div>
           
           {/* Mobile Menu Button */}
@@ -65,7 +65,7 @@ const Navbar = () => {
           <a href="#campus" className="nav-link text-gray-900">Campus</a>
           <a href="#events" className="nav-link text-gray-900">Events</a>
           <a href="#contact" className="nav-link text-gray-900">Contact</a>
-          <a href="#contact" className="button-primary bg-law-red text-white text-center">Apply Now</a>
+          <a href="#contact" className="button-primary bg-[#94C414] text-white text-center">Apply Now</a>
         </div>
       </div>
     </header>
