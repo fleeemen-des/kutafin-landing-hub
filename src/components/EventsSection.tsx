@@ -3,22 +3,22 @@ import { Calendar } from 'lucide-react';
 
 const events = [
   {
-    title: "International Legal Conference",
-    date: "October 15-17, 2023",
-    location: "Main Auditorium",
-    description: "Join leading international legal experts for discussions on current global legal challenges and solutions."
+    title: "Russian-Chinese Legal Forum",
+    date: "October - November",
+    location: "Main Hall",
+    description: ".This forum serves as a platform for legal professionals, scholars, and practitioners from Russia and China to discuss current legal issues, share experiences, and strengthen bilateral legal cooperation."
   },
   {
-    title: "Law Career Fair",
-    date: "November 5, 2023",
+    title: "Moscow Legal Forum ",
+    date: "November",
     location: "University Hall",
-    description: "Meet representatives from top law firms, government agencies, and non-profit organizations."
+    description: "This event provides a comprehensive platform for discussing contemporary legal challenges, innovative legal solutions, and trends in jurisprudence, bringing together national and international legal practitioners."
   },
   {
-    title: "Moot Court Competition",
-    date: "December 8-10, 2023",
-    location: "Law Faculty Building",
-    description: "Witness our students demonstrate their legal advocacy skills in simulated court proceedings."
+    title: "International IP Legal Forumn",
+    date: "February",
+    location: "Main Hall",
+    description: "The International Intellectual Property Legal Forum is an annual event held at the Moscow State Law Academy, focusing on intellectual property law. This forum brings together experts, researchers, and practitioners from various countries to discuss recent developments, challenges, and innovations in intellectual property rights and legal protection."
   }
 ];
 
