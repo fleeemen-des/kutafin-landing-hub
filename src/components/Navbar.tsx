@@ -1,7 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,14 +16,11 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-6 py-4 bg-gray-800">
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
+      <div className="container mx-auto px-6 py-4 bg-red-300">
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="#" className={`font-serif text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
@@ -68,8 +63,6 @@ const Navbar = () => {
           <a href="#contact" className="button-primary bg-[#94C414] text-white text-center">Apply Now</a>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Navbar;
