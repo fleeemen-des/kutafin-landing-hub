@@ -5,19 +5,19 @@ const faculty = [
   {
     name: "Prof. Benjamin Shakhnazarov",
     title: "Professor, Department of Intellectual Rights",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/e0629aae-f4de-4785-8180-d9e3e8dce4e7.png",
     description: "Expert in international intellectual property law with research focusing on harmonizing principles of conflict-law regulation of intellectual property rights to industrial property objects."
   },
   {
     name: "Prof. Viktor Machekhin",
     title: "Associate Professor, Department of Tax Law",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/6273eafc-863e-4289-a282-475c255f1096.png",
     description: "Specialist in tax law with over 32 years of experience. Teaches international tax law, tax planning, and taxation of transnational companies."
   },
   {
     name: "Prof. Alexey Minbaleev",
     title: "Head, Department of Quantum Law Research",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/3ca08f0e-abe5-423c-9193-dfc10a31b233.png",
     description: "Leading researcher on legal regulation of quantum communication, focusing on quantum key distribution and information security in the post-quantum era."
   }
 ];
