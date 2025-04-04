@@ -15,10 +15,10 @@ const faculty = [
     description: "Specialist in tax law with over 32 years of experience. Teaches international tax law, tax planning, and taxation of transnational companies."
   },
   {
-    name: "Prof. Elena Petrova",
-    title: "Head, Department of Criminal Law",
+    name: "Prof. Alexey Minbaleev",
+    title: "Head, Department of Quantum Law Research",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    description: "Renowned scholar in criminal justice reforms and author of several influential publications."
+    description: "Leading researcher on legal regulation of quantum communication, focusing on quantum key distribution and information security in the post-quantum era."
   }
 ];
 
