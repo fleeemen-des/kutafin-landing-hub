@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { Building2, UtensilsCrossed, Bus, Building, HeartPulse } from 'lucide-react';
 
@@ -90,13 +89,12 @@ const FacilitiesSection = () => {
             <h3 className="text-2xl font-serif font-semibold text-law-navy mb-6">International Student Community</h3>
             <div className="inline-block px-6 py-3 bg-white rounded-full shadow-md">
               <p className="text-law-red font-medium">
-                <span className="text-3xl font-bold mr-2">136</span>
-                International Students from SCO Countries
+                International Students from more than 40 countries
               </p>
             </div>
             <p className="mt-6 text-law-slate max-w-2xl mx-auto">
               We have a vibrant and diverse international student community, including students from 
-              Shanghai Cooperation Organization countries. Our university provides specialized support
+              around the globe. Our university provides specialized support
               for international students to ensure a comfortable and productive educational experience.
             </p>
           </div>
