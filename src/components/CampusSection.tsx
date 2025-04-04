@@ -1,38 +1,19 @@
 import React, { useRef } from 'react';
-
 const CampusSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(sectionRef);
-  
-  return (
-    <section id="campus" className="py-20 md:py-28 bg-gray-50" ref={sectionRef}>
+  return <section id="campus" className="py-20 md:py-28 bg-gray-50" ref={sectionRef}>
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`order-2 lg:order-1 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Kutafin University Campus" 
-                  className="w-full h-48 object-cover rounded-md shadow-md"
-                />
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Modern Library" 
-                  className="w-full h-64 object-cover rounded-md shadow-md"
-                />
+                <img alt="Kutafin University Campus" className="w-full h-48 object-cover rounded-md shadow-md" src="/lovable-uploads/144fee8f-ab9d-4ad9-b10c-3c1dd69f6725.jpg" />
+                <img alt="Modern Library" className="w-full h-64 object-cover rounded-md shadow-md" src="/lovable-uploads/d5574d05-42a0-4150-a0a5-35335f0ab713.jpg" />
               </div>
               <div className="space-y-4 mt-8">
-                <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Computer Lab" 
-                  className="w-full h-64 object-cover rounded-md shadow-md"
-                />
-                <img 
-                  src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Lecture Hall" 
-                  className="w-full h-48 object-cover rounded-md shadow-md"
-                />
+                <img alt="Computer Lab" className="w-full h-64 object-cover rounded-md shadow-md" src="/lovable-uploads/498c40fe-15ea-4cad-9e70-1d32b916be20.jpg" />
+                <img alt="Lecture Hall" className="w-full h-48 object-cover rounded-md shadow-md" src="/lovable-uploads/d15788a5-24a3-40cd-91ca-3ac3867b948c.jpg" />
               </div>
             </div>
           </div>
@@ -94,28 +75,22 @@ const CampusSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 
 // Utility hook for checking if element is in viewport
 function useOnScreen(ref: React.RefObject<HTMLElement>) {
   const [isIntersecting, setIntersecting] = React.useState(false);
-
   React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIntersecting(true);
-          observer.disconnect();
-        }
-      },
-      {
-        rootMargin: '0px',
-        threshold: 0.1
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIntersecting(true);
+        observer.disconnect();
       }
-    );
-
+    }, {
+      rootMargin: '0px',
+      threshold: 0.1
+    });
     if (ref.current) {
       observer.observe(ref.current);
     }
@@ -123,8 +98,6 @@ function useOnScreen(ref: React.RefObject<HTMLElement>) {
       observer.disconnect();
     };
   }, [ref]);
-
   return isIntersecting;
 }
-
 export default CampusSection;
