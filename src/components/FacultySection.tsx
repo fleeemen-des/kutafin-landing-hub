@@ -1,23 +1,24 @@
+
 import React, { useRef } from 'react';
 
 const faculty = [
   {
-    name: "Prof. Alexander Ivanov",
-    title: "Dean, Faculty of Constitutional Law",
+    name: "Prof. Benjamin Shakhnazarov",
+    title: "Professor, Department of Intellectual Rights",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    description: "Leading expert in constitutional law with over 25 years of experience in legal education and research."
+    description: "Expert in international intellectual property law with research focusing on harmonizing principles of conflict-law regulation of intellectual property rights to industrial property objects."
+  },
+  {
+    name: "Prof. Viktor Machekhin",
+    title: "Associate Professor, Department of Tax Law",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    description: "Specialist in tax law with over 32 years of experience. Teaches international tax law, tax planning, and taxation of transnational companies."
   },
   {
     name: "Prof. Elena Petrova",
     title: "Head, Department of Criminal Law",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "Renowned scholar in criminal justice reforms and author of several influential publications."
-  },
-  {
-    name: "Prof. Mikhail Kuznetsov",
-    title: "Chair, International Law Center",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    description: "Distinguished expert in international law who has represented Russia at numerous international forums."
   }
 ];
 
