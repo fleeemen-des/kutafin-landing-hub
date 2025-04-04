@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:block">
-            <a href="#contact" className="button-primary bg-[#94C414] text-white hover:bg-[#94C414]/90">Apply Now</a>
+            <a href="#contact" className="button-primary bg-[#381314] text-white hover:bg-[#94C414]/90">Apply Now</a>
           </div>
           
           {/* Mobile Menu Button */}
