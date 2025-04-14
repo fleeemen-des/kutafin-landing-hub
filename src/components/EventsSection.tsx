@@ -1,32 +1,33 @@
 import React, { useRef } from 'react';
 import { Calendar } from 'lucide-react';
+
 const events = [{
-  title: "International Legal Conference",
-  date: "October 15-17, 2023",
-  location: "Main Auditorium",
-  description: "Join leading international legal experts for discussions on current global legal challenges and solutions."
+  title: "Moscow International Legal Forum",
+  date: "September 20-22, 2024",
+  location: "Moscow City Conference Center",
+  description: "A premier international conference bringing together legal experts, scholars, and practitioners to discuss global legal challenges and innovations in jurisprudence."
 }, {
-  title: "Law Career Fair",
-  date: "November 5, 2023",
-  location: "University Hall",
-  description: "Meet representatives from top law firms, government agencies, and non-profit organizations."
+  title: "Russian-Chinese Legal Forum",
+  date: "October 15-17, 2024",
+  location: "Kutafin Moscow State Law University",
+  description: "An annual bilateral forum fostering legal dialogue and cooperation between Russian and Chinese legal professionals, exploring comparative law and international legal frameworks."
 }, {
-  title: "Moot Court Competition",
-  date: "December 8-10, 2023",
-  location: "Law Faculty Building",
-  description: "Witness our students demonstrate their legal advocacy skills in simulated court proceedings."
+  title: "International IP Forum",
+  date: "November 10-12, 2024",
+  location: "International Business Center",
+  description: "A comprehensive conference addressing the latest developments in intellectual property law, featuring global experts, policy makers, and industry leaders discussing emerging IP trends and challenges."
 }];
+
 const EventsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(sectionRef);
   return <section id="events" className="py-20 md:py-28 bg-white" ref={sectionRef}>
       <div className="container mx-auto px-6">
         <div className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h5 className="text-law-red font-medium mb-3">UPCOMING EVENTS</h5>
-          <h2 className="text-4xl md:text-5xl font-serif font-semibold text-gray-900 mb-6">Join Our Community</h2>
+          <h5 className="text-law-red font-medium mb-3">ANNUAL LEGAL EVENTS</h5>
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold text-gray-900 mb-6">Prominent Legal Conferences</h2>
           <p className="text-gray-700">
-            Stay connected with the latest news, conferences, guest lectures, and special events
-            happening at Kutafin Moscow State Law University.
+            Explore our flagship annual events that bring together legal minds from around the world to discuss critical legal issues, foster international cooperation, and drive legal innovation.
           </p>
         </div>
         
@@ -57,12 +58,10 @@ const EventsSection = () => {
     </section>;
 };
 
-// Utility hook for checking if element is in viewport
 function useOnScreen(ref: React.RefObject<HTMLElement>) {
   const [isIntersecting, setIntersecting] = React.useState(false);
   React.useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      // When element enters viewport, set state to true and stop observing
       if (entry.isIntersecting) {
         setIntersecting(true);
         observer.disconnect();
@@ -80,4 +79,5 @@ function useOnScreen(ref: React.RefObject<HTMLElement>) {
   }, [ref]);
   return isIntersecting;
 }
+
 export default EventsSection;
