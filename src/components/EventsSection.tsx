@@ -1,5 +1,5 @@
+
 import React, { useRef } from 'react';
-import { Calendar } from 'lucide-react';
 
 const events = [{
   title: "Moscow International Legal Forum",
@@ -33,10 +33,6 @@ const EventsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {events.map((event, index) => <div key={event.title} className="">
-              <div className="flex items-center mb-4">
-                <Calendar size={20} className="text-law-red mr-2" />
-                <span className="text-gray-600 text-sm">{event.date}</span>
-              </div>
               <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2">{event.title}</h3>
               <p className="text-law-red text-sm mb-4">{event.location}</p>
               <p className="text-gray-700 text-sm mb-6">{event.description}</p>
