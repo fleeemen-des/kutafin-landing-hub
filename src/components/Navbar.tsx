@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { toast } from "sonner";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,9 +19,19 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const handleApplyNow = (e: React.MouseEvent) => {
+    e.preventDefault();
+    toast.success("Contact Information", {
+      description: "Write here to apply: etgasanov@msal.ru",
+      duration: 5000,
+    });
+  };
+
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
       <div className={`container mx-auto px-6 py-4 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
         <nav className="flex items-center justify-between">
@@ -41,7 +53,7 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:block">
-            <a href="#contact" className="button-primary bg-[#381314] text-white hover:bg-[#94C414]/90">Apply Now</a>
+            <a href="#contact" onClick={handleApplyNow} className="button-primary bg-[#381314] text-white hover:bg-[#94C414]/90">Apply Now</a>
           </div>
           
           {/* Mobile Menu Button */}
@@ -61,7 +73,7 @@ const Navbar = () => {
           <a href="#campus" className="nav-link text-gray-900">Campus</a>
           <a href="#events" className="nav-link text-gray-900">Events</a>
           <a href="#contact" className="nav-link text-gray-900">Contact</a>
-          <a href="#contact" className="button-primary bg-[#94C414] text-white text-center">Apply Now</a>
+          <a href="#contact" onClick={handleApplyNow} className="button-primary bg-[#94C414] text-white text-center">Apply Now</a>
         </div>
       </div>
     </header>;
