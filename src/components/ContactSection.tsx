@@ -49,11 +49,11 @@ const ContactSection = () => {
             <h3 className="text-xl font-serif font-semibold text-law-navy mb-6">Contact Information</h3>
             
             <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
                   <MapPin size={18} className="text-law-gold" />
                 </div>
-                <div>
+                <div className="flex-1">
                   <h4 className="font-medium text-law-navy mb-1">Address</h4>
                   <p className="text-law-slate text-sm">
                     Sadovaya-Kudrinskaya Street, 9<br />
@@ -62,11 +62,11 @@ const ContactSection = () => {
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone size={18} className="text-law-gold" />
                 </div>
-                <div>
+                <div className="flex-1">
                   <h4 className="font-medium text-law-navy mb-1">Phone</h4>
                   <p className="text-law-slate text-sm">
                     +7 (499) 244-88-88, ext. 685
@@ -74,11 +74,11 @@ const ContactSection = () => {
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
                   <Mail size={18} className="text-law-gold" />
                 </div>
-                <div>
+                <div className="flex-1">
                   <h4 className="font-medium text-law-navy mb-1">Email</h4>
                   <p className="text-law-slate text-sm mb-3">
                     international@msal.ru
