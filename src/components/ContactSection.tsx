@@ -72,8 +72,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-law-navy mb-1">Phone</h4>
                     <p className="text-law-slate text-sm">
-                      +7 (499) 244-86-35<br />
-                      +7 (499) 244-86-36
+                      +7 (499) 244-88-88, ext. 685
                     </p>
                   </div>
                 </div>
@@ -84,9 +83,24 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-law-navy mb-1">Email</h4>
+                    <p className="text-law-slate text-sm mb-3">
+                      international@msal.ru
+                    </p>
+                    <h5 className="font-medium text-law-navy text-xs mb-2">Contact Persons:</h5>
                     <p className="text-law-slate text-sm">
-                      msal@msal.ru<br />
-                      admissions@msal.ru
+                      <strong>Emil T. Gasanov</strong><br />
+                      ETGASANOV@msal.ru<br />
+                      Tel.: ext. 854
+                    </p>
+                    <p className="text-law-slate text-sm mt-2">
+                      <strong>Ariza Kh. Ichalova</strong><br />
+                      AHICHALOVA@msal.ru<br />
+                      Tel.: ext. 2044
+                    </p>
+                    <p className="text-law-slate text-sm mt-2">
+                      <strong>Carlos Daniel Valverde Petrov</strong><br />
+                      KVALVERDE@msal.ru<br />
+                      Tel.: ext. 685
                     </p>
                   </div>
                 </div>
