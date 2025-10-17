@@ -44,78 +44,74 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-          
-          
-          <div className={`transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            <div className="bg-white p-8 rounded-lg shadow-lg h-full">
-              <h3 className="text-xl font-serif font-semibold text-law-navy mb-6">Contact Information</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
-                    <MapPin size={18} className="text-law-gold" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-law-navy mb-1">Address</h4>
-                    <p className="text-law-slate text-sm">
-                      Sadovaya-Kudrinskaya Street, 9<br />
-                      Moscow, Russia, 123995
-                    </p>
-                  </div>
+        <div className={`transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+          <div className="bg-white p-8 shadow-lg h-full">
+            <h3 className="text-xl font-serif font-semibold text-law-navy mb-6">Contact Information</h3>
+            
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
+                  <MapPin size={18} className="text-law-gold" />
                 </div>
-                
-                <div className="flex items-start">
-                  <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
-                    <Phone size={18} className="text-law-gold" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-law-navy mb-1">Phone</h4>
-                    <p className="text-law-slate text-sm">
-                      +7 (499) 244-88-88, ext. 685
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
-                    <Mail size={18} className="text-law-gold" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-law-navy mb-1">Email</h4>
-                    <p className="text-law-slate text-sm mb-3">
-                      international@msal.ru
-                    </p>
-                    <h5 className="font-medium text-law-navy text-xs mb-2">Contact Persons:</h5>
-                    <p className="text-law-slate text-sm">
-                      <strong>Emil T. Gasanov</strong><br />
-                      ETGASANOV@msal.ru<br />
-                      Tel.: ext. 854
-                    </p>
-                    <p className="text-law-slate text-sm mt-2">
-                      <strong>Ariza Kh. Ichalova</strong><br />
-                      AHICHALOVA@msal.ru<br />
-                      Tel.: ext. 2044
-                    </p>
-                    <p className="text-law-slate text-sm mt-2">
-                      <strong>Carlos Daniel Valverde Petrov</strong><br />
-                      KVALVERDE@msal.ru<br />
-                      Tel.: ext. 685
-                    </p>
-                  </div>
+                <div>
+                  <h4 className="font-medium text-law-navy mb-1">Address</h4>
+                  <p className="text-law-slate text-sm">
+                    Sadovaya-Kudrinskaya Street, 9<br />
+                    Moscow, Russia, 123995
+                  </p>
                 </div>
               </div>
               
-              <div className="mt-8">
-                <h4 className="font-medium text-law-navy mb-3">Office Hours</h4>
-                <p className="text-law-slate text-sm mb-2">
-                  Monday - Friday: 9:00 AM - 6:00 PM
-                </p>
-                <p className="text-law-slate text-sm">
-                  Saturday: 9:00 AM - 1:00 PM<br />
-                  Sunday: Closed
-                </p>
+              <div className="flex items-start">
+                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
+                  <Phone size={18} className="text-law-gold" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-law-navy mb-1">Phone</h4>
+                  <p className="text-law-slate text-sm">
+                    +7 (499) 244-88-88, ext. 685
+                  </p>
+                </div>
               </div>
+              
+              <div className="flex items-start">
+                <div className="w-10 h-10 bg-law-gold/20 rounded-full flex items-center justify-center mr-4">
+                  <Mail size={18} className="text-law-gold" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-law-navy mb-1">Email</h4>
+                  <p className="text-law-slate text-sm mb-3">
+                    international@msal.ru
+                  </p>
+                  <h5 className="font-medium text-law-navy text-xs mb-2">Contact Persons:</h5>
+                  <p className="text-law-slate text-sm">
+                    <strong>Emil T. Gasanov</strong><br />
+                    ETGASANOV@msal.ru<br />
+                    Tel.: ext. 854
+                  </p>
+                  <p className="text-law-slate text-sm mt-2">
+                    <strong>Ariza Kh. Ichalova</strong><br />
+                    AHICHALOVA@msal.ru<br />
+                    Tel.: ext. 2044
+                  </p>
+                  <p className="text-law-slate text-sm mt-2">
+                    <strong>Carlos Daniel Valverde Petrov</strong><br />
+                    KVALVERDE@msal.ru<br />
+                    Tel.: ext. 685
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8">
+              <h4 className="font-medium text-law-navy mb-3">Office Hours</h4>
+              <p className="text-law-slate text-sm mb-2">
+                Monday - Friday: 9:00 AM - 6:00 PM
+              </p>
+              <p className="text-law-slate text-sm">
+                Saturday: 9:00 AM - 1:00 PM<br />
+                Sunday: Closed
+              </p>
             </div>
           </div>
         </div>
