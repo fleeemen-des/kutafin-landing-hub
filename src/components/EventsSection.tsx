@@ -1,6 +1,4 @@
-
 import React, { useRef } from 'react';
-
 const events = [{
   title: "Moscow International Legal Forum",
   date: "September 20-22, 2024",
@@ -17,7 +15,6 @@ const events = [{
   location: "International Business Center",
   description: "A comprehensive conference addressing the latest developments in intellectual property law, featuring global experts, policy makers, and industry leaders discussing emerging IP trends and challenges."
 }];
-
 const EventsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(sectionRef);
@@ -36,24 +33,16 @@ const EventsSection = () => {
               <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2">{event.title}</h3>
               <p className="text-law-red text-sm mb-4">{event.location}</p>
               <p className="text-gray-700 text-sm mb-6">{event.description}</p>
-              <a href="#" className="text-law-red font-medium text-sm flex items-center hover:text-law-red/80 transition-colors">
-                Learn More
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
+              
             </div>)}
         </div>
         
         <div className={`mt-12 text-center transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <a href="#" className="button-secondary border-law-red text-law-red hover:bg-law-red hover:text-white inline-block">
-            View All Events
-          </a>
+          
         </div>
       </div>
     </section>;
 };
-
 function useOnScreen(ref: React.RefObject<HTMLElement>) {
   const [isIntersecting, setIntersecting] = React.useState(false);
   React.useEffect(() => {
@@ -75,5 +64,4 @@ function useOnScreen(ref: React.RefObject<HTMLElement>) {
   }, [ref]);
   return isIntersecting;
 }
-
 export default EventsSection;
