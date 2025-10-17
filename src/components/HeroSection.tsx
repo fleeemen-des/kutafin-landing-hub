@@ -1,9 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
-
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     // Set visibility after a short delay for animation purposes
     const timer = setTimeout(() => {
@@ -11,7 +8,6 @@ const HeroSection = () => {
     }, 100);
     return () => clearTimeout(timer);
   }, []);
-
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-law-red/95">
@@ -35,9 +31,7 @@ const HeroSection = () => {
               <a href="#programs" className="button-primary bg-white text-law-red hover:bg-white/90 hover:text-law-red/90">
                 Explore Programs
               </a>
-              <a href="#about" className="button-secondary border-white text-white hover:bg-white hover:text-law-red">
-                Learn More
-              </a>
+              
             </div>
           </div>
         </div>
@@ -67,5 +61,4 @@ const HeroSection = () => {
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
     </section>;
 };
-
 export default HeroSection;
